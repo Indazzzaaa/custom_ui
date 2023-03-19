@@ -1,0 +1,60 @@
+[Advanced selectors]
+[Example 1 : adjacent sibling]
+<div class="container">
+  <div class="box"></div>
+  <div class="text"></div>
+</div>
+
+
+.box:hover + .text {
+  color: red;
+}
+
+[Example 2 any sibling]
+
+.box:hover ~ .text {
+  color: red;
+}
+
+[Example3 elment inside another  : ]
+In this code, when you hover over the element with the .box class, the .text element will be targeted only if it is a direct child of the .wrapper element, which in turn is a direct child of the .box element. The color property will then be applied to the .text element, making its text appear in red.
+
+<div class="container">
+  <div class="box"></div>
+  <div class="wrapper">
+    <div class="text"></div>
+  </div>
+</div>
+
+
+.box:hover > .wrapper > .text {
+  color: red;
+}
+
+
+[Example4 andy descendent ]
+<div class="container">
+  <div class="box"></div>
+  <div class="wrapper">
+    <div class="text"></div>
+  </div>
+</div>
+
+
+.box:hover .wrapper .text {
+  color: red;
+}
+
+
+In this code, when you hover over the element with the .box class, any descendant elements with the .wrapper and .text classes will be targeted using the descendant combinator (a space). The color property will then be applied to the .text elements, making their text appear in red.
+
+Note that the second method is less specific than the others, so it may result in unintended style changes if there are multiple .text elements elsewhere in the page.
+
+
+[Example 5 : To effect parent from it's child]
+ .box:has(.x):hover{
+        background-color: white;
+       }
+
+in this ".box" is parent and ".x" is child and when we hover over ".x" we get backgroud color of .box to white
+

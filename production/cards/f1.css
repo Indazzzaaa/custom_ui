@@ -1,0 +1,17 @@
+.inside{
+    width: 200px;
+    flex-shrink: 0;
+    background-color: coral;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.flexbox {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
+}

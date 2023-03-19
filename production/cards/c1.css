@@ -1,0 +1,52 @@
+.vertical{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: lightcoral;
+    
+    padding: 2px;
+    
+
+}
+
+
+
+.top,.bottom{
+    height: 150px;
+
+
+}
+.left,.right{
+    display: inline-block;
+    height: inherit;
+   
+}
+
+.top{
+    background-color: lightpink;
+}
+.bottom{
+    background-color: lightseagreen;
+}
+
+.left{
+    background-color: rgb(39, 139, 239);
+    
+}
+.right{
+    background-color: darkolivegreen;
+    
+}
+
+.grid {
+    display: grid;
+    column-gap: 3px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.main_grid{
+    display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 1fr 4fr;
+}

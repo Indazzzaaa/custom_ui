@@ -1,0 +1,169 @@
+.element {
+            background-color: lightcoral;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 40px;
+            border: 1px solid darkslategrey;
+            border-radius: 2px;
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: center;
+            align-items: center;  */
+
+        }
+
+        .left,
+        .mid,
+        .right {
+            background-color: #03A696;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 2px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+
+
+        .mid {
+            flex: 1;
+            max-width: 40vw;
+        }
+
+
+
+        .left_bar {
+            background-color: lightslategray;
+            position: fixed;
+            height: calc(100vh - 41px);
+            top: 41px;
+            left: 0px;
+            width: 80px;
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+
+
+        }
+
+        .top,
+        .mid-vr,
+        .bottom {
+            background-color: #A7C6D9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 2px solid black;
+
+        }
+
+        .top {
+            flex: 1;
+        }
+
+        .mid-vr {
+            flex: 3;
+        }
+
+        .bottom {
+            flex: 1;
+        }
+
+        .content {
+            margin-top: 50px;
+            margin-left: 80px;
+            padding: 12px;
+            background-color: lightblue;
+            /* height: calc(100vh - 100px); */
+            height: 1000px;
+        }
+
+        .cancel{
+            background-color: lightsalmon;
+            position: absolute;
+            top: 8px;
+            right: 5px;
+            cursor: pointer;
+            padding: 10px;
+            box-shadow: -2px 2px rgb(68, 69, 72);
+            z-index: 10;
+        }
+
+      /* This will only work when top class is just below to cancel class   
+      .cancel:hover + .top{
+            background-color: rgb(170, 150, 142);
+            opacity: .5;
+            
+        } */
+
+      /* This will work when top is at any sibling   
+      .cancel:hover ~ .top{
+             background-color: rgb(170, 150, 142);
+            opacity: .5;
+        } */
+
+        
+        .item1{
+            cursor: pointer;
+        }
+
+
+        .absTest{
+
+            position: absolute;
+            top: 50px;
+            right:10px;
+
+
+        }
+
+        /* 
+        
+        Position absolute is tricky : see the docs or read from anywhere
+        
+        */
+
+        .relTest{
+            background-color: rgb(106, 147, 106);
+            padding: 5px;
+            display: inline-block;
+            border-radius: 2px;
+            position: relative;
+            /* top: 50px; */
+            
+            bottom: 10px;
+            /* top: 50px; */
+            right: 10px;
+        }
+
+        .box{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: darkslategray;
+            border-radius: 2px;
+            
+        }
+
+        .x{
+            position: absolute;
+            top:-10px;
+            right: 2px;
+            background-color: red;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+     
+       .box:has(.x):hover{
+        background-color: white;
+       }

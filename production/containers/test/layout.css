@@ -1,0 +1,24 @@
+div{
+    height: 30px;
+    margin-top: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.hori{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+}
+
+.top,.left{
+    background-color: lightcoral;
+}
+
+.mid,.middle{
+    background-color: lightsalmon;
+}
+
+.bottom,.right{
+    background-color: lightslategrey;
+}
